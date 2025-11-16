@@ -1,6 +1,6 @@
-# Tauri React Starter
+# {{PROJECT_NAME}}
 
-A modern, lightweight starter template for building cross-platform desktop applications with Tauri, React, TypeScript, and shadcn/ui.
+A modern desktop application built with Tauri, React, and TypeScript.
 
 ## ✨ Features
 

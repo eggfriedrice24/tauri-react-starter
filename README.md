@@ -5,7 +5,7 @@ A modern, lightweight starter template for building cross-platform desktop appli
 ## ✨ Features
 
 - 🚀 **[Tauri 2](https://tauri.app/)** - Build smaller, faster, and more secure desktop applications
-- ⚛️ **[React 18](https://react.dev/)** - Modern React with hooks
+- ⚛️ **[React 19](https://react.dev/)** - Latest React with new compiler and improved performance
 - 🔷 **[TypeScript](https://www.typescriptlang.org/)** - Type safety out of the box
 - 🎨 **[Tailwind CSS v4](https://tailwindcss.com/)** - Utility-first CSS framework
 - 🧩 **[shadcn/ui](https://ui.shadcn.com/)** - Beautiful, accessible component library
@@ -116,7 +116,7 @@ tauri-react-starter/
 
 ### Frontend
 
-- **React 18** - UI library
+- **React 19** - UI library
 - **TypeScript** - Type safety
 - **Tailwind CSS v4** - Styling
 - **shadcn/ui** - Component library

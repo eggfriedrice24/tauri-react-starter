@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-import { ThemeProvider, useTheme } from "./theme-provider";
+import { ThemeProvider } from "./theme-provider";
 
 type ProvidersProps = {
   children: ReactNode;
@@ -14,4 +14,4 @@ export function Providers({ children }: ProvidersProps) {
   );
 }
 
-export { useTheme };
+export { useTheme } from "@/hooks/use-theme";

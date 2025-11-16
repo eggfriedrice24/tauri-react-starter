@@ -17,6 +17,7 @@ export default antfu({
     "**/src-tauri/target/**",
     "**/.tauri/**",
     "**/node_modules/**",
+    "**/.github/**",
   ],
 }, {
   rules: {

@@ -38,6 +38,7 @@ This project uses GitHub Actions for continuous integration and automated releas
 **Purpose:** Build installers for all platforms and create a GitHub Release
 
 **Platforms:**
+
 - ✅ **Windows** (x64) - `.exe`, `.msi`, NSIS installer
 - ✅ **macOS** (Intel x64) - `.dmg`, `.app`
 - ✅ **macOS** (Apple Silicon ARM) - `.dmg`, `.app`
@@ -67,11 +68,13 @@ git push origin main
 ### Creating a Release
 
 1. **Update version** in `package.json` and `src-tauri/Cargo.toml`:
+
    ```json
    "version": "1.0.0"
    ```
 
 2. **Create and push a version tag**:
+
    ```bash
    git tag v1.0.0
    git push origin v1.0.0
@@ -137,6 +140,7 @@ See [Tauri Code Signing Guide](https://tauri.app/distribute/sign/) for details.
 ### Skip macOS ARM builds
 
 Remove this from `release.yml`:
+
 ```yaml
 - os: macos-latest
   platform: macos-arm
@@ -146,10 +150,11 @@ Remove this from `release.yml`:
 ### Change trigger branch
 
 Edit `ci.yml`:
+
 ```yaml
 on:
   push:
-    branches: [main, develop]  # Add more branches
+    branches: [main, develop] # Add more branches
 ```
 
 ---

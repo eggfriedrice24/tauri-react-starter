@@ -182,6 +182,7 @@ This starter includes professional CI/CD workflows out of the box:
 ### ✅ Continuous Integration (`ci.yml`)
 
 Runs on every push and PR:
+
 - TypeScript type checking
 - ESLint linting (React + Rust)
 - Format verification
@@ -199,6 +200,7 @@ git push origin v1.0.0
 ```
 
 **Builds for:**
+
 - Windows (x64) - `.exe`, `.msi`, NSIS installer
 - macOS (Intel) - `.dmg`, `.app`
 - macOS (Apple Silicon) - `.dmg`, `.app`

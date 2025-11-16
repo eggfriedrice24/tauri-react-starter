@@ -2,5 +2,5 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
 fn main() {
-  tauri_react_starter_lib::run()
+  {{PROJECT_NAME_SNAKE}}_lib::run()
 }

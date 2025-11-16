@@ -1,0 +1,29 @@
+# Rust formatter configuration
+# See: https://rust-lang.github.io/rustfmt/
+# Note: Only using stable features (no nightly-only options)
+
+edition = "2021"
+
+# Formatting options
+max_width = 100
+tab_spaces = 2
+newline_style = "Auto"
+
+# Style
+use_small_heuristics = "Default"
+fn_call_width = 80
+struct_lit_width = 80
+chain_width = 80
+
+# Unstable features (commented out - require nightly Rust)
+# To use these, install nightly: rustup toolchain install nightly
+# Then format with: cargo +nightly fmt
+
+# imports_granularity = "Crate"
+# group_imports = "StdExternalCrate"
+# wrap_comments = true
+# comment_width = 80
+# normalize_comments = true
+# format_code_in_doc_comments = true
+# format_strings = true
+# format_macro_bodies = true

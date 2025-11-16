@@ -2,5 +2,5 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
 fn main() {
-    tauricn_lib::run()
+  tauri_react_starter_lib::run()
 }

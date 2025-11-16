@@ -3,16 +3,20 @@
   "type": "module",
   "version": "0.1.0",
   "private": true,
-  "author": "eggfriedrice",
-  "description": "A Tauri + React + shadcn/ui starter template",
   "packageManager": "pnpm@10.5.0+sha512.11106a5916c7406fe4b8cb8e3067974b8728f47308a4f5ac5e850304afa6f57e2847d7950dfe78877d8d36bfb401d381c4215db3a4c3547ffa63c14333a6fa51",
+  "description": "A Tauri + React + shadcn/ui starter template",
+  "author": "eggfriedrice",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "tauri": "tauri",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "lint:rust": "cd src-tauri && cargo clippy -- -D warnings",
+    "format": "eslint . --fix && cd src-tauri && cargo fmt",
+    "format:rust": "cd src-tauri && cargo fmt",
+    "format:check": "eslint . && cd src-tauri && cargo fmt --check"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.4",

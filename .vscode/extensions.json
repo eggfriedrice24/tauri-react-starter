@@ -1,3 +1,13 @@
 {
-  "recommendations": ["tauri-apps.tauri-vscode", "rust-lang.rust-analyzer"]
+  "recommendations": [
+    // Rust
+    "rust-lang.rust-analyzer",
+    "tamasfe.even-better-toml",
+
+    // JavaScript/TypeScript
+    "dbaeumer.vscode-eslint",
+
+    // Tailwind CSS
+    "bradlc.vscode-tailwindcss"
+  ]
 }

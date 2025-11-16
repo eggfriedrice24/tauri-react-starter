@@ -35,12 +35,14 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "tauri": "tauri",
+    "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "lint:rust": "cd src-tauri && cargo clippy -- -D warnings",
     "format": "eslint . --fix && cd src-tauri && cargo fmt",
     "format:rust": "cd src-tauri && cargo fmt",
-    "format:check": "eslint . && cd src-tauri && cargo fmt --check"
+    "format:check": "eslint . && cd src-tauri && cargo fmt --check",
+    "format:check:rust": "cd src-tauri && cargo fmt --check"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.4",

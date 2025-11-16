@@ -16,6 +16,7 @@ A modern, lightweight starter template for building cross-platform desktop appli
 - 🔍 **[ESLint](https://eslint.org/)** - Code quality with [antfu's config](https://github.com/antfu/eslint-config)
 - 🎯 **Format on Save** - Configured for both React and Rust
 - 📝 **VS Code Ready** - Pre-configured settings and extension recommendations
+- 🤖 **GitHub Actions** - CI/CD with multi-platform builds (Windows, macOS, Linux)
 
 ## 📋 Prerequisites
 
@@ -65,12 +66,18 @@ pnpm build        # Build frontend (React app)
 pnpm tauri build  # Build Tauri app for production
 ```
 
-### Linting & Formatting
+### Type Checking & Linting
 
 ```bash
+pnpm typecheck         # TypeScript type checking
 pnpm lint              # Check ESLint issues
 pnpm lint:fix          # Auto-fix ESLint issues
 pnpm lint:rust         # Run Clippy on Rust code
+```
+
+### Formatting
+
+```bash
 pnpm format            # Format both React and Rust code
 pnpm format:rust       # Format Rust code only
 pnpm format:check      # Check formatting without fixing
@@ -166,7 +173,42 @@ pnpm tauri build
 - **macOS**: `.dmg` and `.app` in `src-tauri/target/release/bundle/`
 - **Linux**: `.deb`, `.AppImage` in `src-tauri/target/release/bundle/`
 
-**Note:** You can only build for your current platform. For multi-platform builds, use CI/CD (GitHub Actions recommended).
+**Note:** You can only build for your current platform. For multi-platform builds, use GitHub Actions (see below).
+
+## 🤖 GitHub Actions CI/CD
+
+This starter includes professional CI/CD workflows out of the box:
+
+### ✅ Continuous Integration (`ci.yml`)
+
+Runs on every push and PR:
+- TypeScript type checking
+- ESLint linting (React + Rust)
+- Format verification
+- Build verification
+
+**Duration:** ~2-3 minutes
+
+### 🚀 Automated Releases (`release.yml`)
+
+Creates multi-platform installers when you push a version tag:
+
+```bash
+git tag v1.0.0
+git push origin v1.0.0
+```
+
+**Builds for:**
+- Windows (x64) - `.exe`, `.msi`, NSIS installer
+- macOS (Intel) - `.dmg`, `.app`
+- macOS (Apple Silicon) - `.dmg`, `.app`
+- Linux (x64) - `.deb`, `.AppImage`
+
+All installers are automatically uploaded to a GitHub Release.
+
+**Duration:** ~10-15 minutes
+
+See [`.github/workflows/README.md`](.github/workflows/README.md) for detailed documentation.
 
 ## 🛠️ Recommended IDE Setup
 

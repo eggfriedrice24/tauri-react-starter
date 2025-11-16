@@ -32,12 +32,14 @@ Before you begin, ensure you have the following installed:
 ## 🚀 Quick Start
 
 1. **Clone the repository**
+
    ```bash
    git clone <your-repo-url>
    cd tauri-react-starter
    ```
 
 2. **Install dependencies**
+
    ```bash
    pnpm install
    ```
@@ -106,6 +108,7 @@ tauri-react-starter/
 ## 🎨 Tech Stack
 
 ### Frontend
+
 - **React 18** - UI library
 - **TypeScript** - Type safety
 - **Tailwind CSS v4** - Styling
@@ -114,10 +117,12 @@ tauri-react-starter/
 - **Lucide React** - Icon library
 
 ### Backend
+
 - **Tauri 2** - Desktop framework
 - **Rust** - System programming language
 
 ### Development Tools
+
 - **ESLint** (antfu config) - Linting
 - **rustfmt** - Rust formatting
 - **Clippy** - Rust linting
@@ -132,6 +137,7 @@ Edit `src/App.css` to customize your theme colors. The starter uses Tailwind v4 
 ### Tauri Configuration
 
 Edit `src-tauri/tauri.conf.json` to configure:
+
 - App name and version
 - Window size and behavior
 - Build targets
@@ -140,6 +146,7 @@ Edit `src-tauri/tauri.conf.json` to configure:
 ### VS Code
 
 The project includes pre-configured settings for:
+
 - Format on save (React & Rust)
 - ESLint integration
 - Tailwind CSS IntelliSense
@@ -154,6 +161,7 @@ pnpm tauri build
 ```
 
 **Outputs:**
+
 - **Windows**: `.exe`, `.msi`, and NSIS installer in `src-tauri/target/release/bundle/`
 - **macOS**: `.dmg` and `.app` in `src-tauri/target/release/bundle/`
 - **Linux**: `.deb`, `.AppImage` in `src-tauri/target/release/bundle/`

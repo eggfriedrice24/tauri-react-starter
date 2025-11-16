@@ -7,6 +7,14 @@
   "description": "A modern, lightweight starter template for building cross-platform desktop applications with Tauri, React, TypeScript, and shadcn/ui",
   "author": "eggfriedrice24",
   "license": "MIT",
+  "homepage": "https://github.com/eggfriedrice24/tauri-react-starter#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eggfriedrice24/tauri-react-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eggfriedrice24/tauri-react-starter/issues"
+  },
   "keywords": [
     "tauri",
     "react",
@@ -22,14 +30,6 @@
     "eslint",
     "antfu"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/eggfriedrice24/tauri-react-starter.git"
-  },
-  "homepage": "https://github.com/eggfriedrice24/tauri-react-starter#readme",
-  "bugs": {
-    "url": "https://github.com/eggfriedrice24/tauri-react-starter/issues"
-  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

@@ -1,14 +1,14 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
+    /* Language and Environment */
+    "target": "ES2022",
     "jsx": "react-jsx",
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "useDefineForClassFields": true,
 
     "baseUrl": ".",
+    /* Modules */
     "module": "ESNext",
-
-    /* Bundler mode */
     "moduleResolution": "bundler",
     "paths": {
       "@/*": ["./src/*"]
@@ -16,13 +16,17 @@
     "resolveJsonModule": true,
     "allowImportingTsExtensions": true,
 
-    /* Linting */
+    /* Type Checking */
     "strict": true,
     "noFallthroughCasesInSwitch": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+
+    /* Emit */
     "noEmit": true,
-    "isolatedModules": true,
+
+    /* Interop Constraints */
+    "verbatimModuleSyntax": true,
     "skipLibCheck": true
   },
   "references": [{ "path": "./tsconfig.node.json" }],

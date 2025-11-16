@@ -4,8 +4,32 @@
   "version": "0.1.0",
   "private": true,
   "packageManager": "pnpm@10.5.0+sha512.11106a5916c7406fe4b8cb8e3067974b8728f47308a4f5ac5e850304afa6f57e2847d7950dfe78877d8d36bfb401d381c4215db3a4c3547ffa63c14333a6fa51",
-  "description": "A Tauri + React + shadcn/ui starter template",
-  "author": "eggfriedrice",
+  "description": "A modern, lightweight starter template for building cross-platform desktop applications with Tauri, React, TypeScript, and shadcn/ui",
+  "author": "eggfriedrice24",
+  "license": "MIT",
+  "keywords": [
+    "tauri",
+    "react",
+    "typescript",
+    "shadcn-ui",
+    "tailwindcss",
+    "vite",
+    "rust",
+    "desktop-app",
+    "starter-template",
+    "boilerplate",
+    "cross-platform",
+    "eslint",
+    "antfu"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eggfriedrice24/tauri-react-starter.git"
+  },
+  "homepage": "https://github.com/eggfriedrice24/tauri-react-starter#readme",
+  "bugs": {
+    "url": "https://github.com/eggfriedrice24/tauri-react-starter/issues"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
